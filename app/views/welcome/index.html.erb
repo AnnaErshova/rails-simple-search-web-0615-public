@@ -1,0 +1,14 @@
+<p>
+  <center>
+    <h1>Welcome! What word would you like to search?</h1>
+  </center>
+</p>
+
+<p>
+  <center>
+    <%= form_tag("/words") do %>
+      <%= text_field_tag (:keyword)%>
+      <%= submit_tag "Search" %>
+    <% end %> 
+</center>
+</p>

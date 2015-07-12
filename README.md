@@ -23,18 +23,26 @@ Our app is super simple. We have a database of random words. The database will b
 * Upon submitting the search query, the user should either be shown a page of the search results, or be redirected to the exact word match
 * If the query returns nothing, a message should appear on the results page indicating that
 
+# welcome controller (welcome/search) => | has SEARCH BAR as a form with a get request
+
+# fuzzy match => search/index
+# exact match => words/show
+# no match => search/index with corresponding message (that none is found)
+
 ### What You Need
 
-* Appropriate migration for word table
-* Word Model
-* Search class (which does not need to inherit from ActiveRecord::Base)
-* Words Controller
-* Search Controller
+x * Appropriate migration for word table
+x * Word Model
+x * Search class (which does not need to inherit from ActiveRecord::Base)
+x * Words Controller
+x * Search Controller
 * Corresponding routes
-* search/index view to render search results
-* words/index view to render list of all words which link to their show pages
-* words/show view to render one word
-* Search Bar on a root page (handled by a welcome controller). The search bar should be a form that submits (as a GET request) to render the search results, which is handled by the index method on the search controller.
+x * search/index view to render search results
+x * words/index view to render list of all words which link to their show pages 
+x * words/show view to render one word
+x * Search Bar on a root page (handled by a welcome controller -- we will explicitly declare this to be welcome/index). 
+* The search bar should be a form that submits (as a GET request) to render the search results, which is handled by the index method on the search controller.
+
 
 **Pass the model and feature tests**
 
